@@ -31,7 +31,6 @@ class _LoginScreenState extends State<LoginScreen> {
         ),
       );
 
-      // Delay navigation slightly to let user read the message
       Future.delayed(const Duration(seconds: 0), () {
         Navigator.pushReplacement(
           context,
@@ -61,7 +60,6 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // 🔹 Background gradient
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -71,7 +69,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
-          // 🔹 Centered login card
           Center(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(24),
